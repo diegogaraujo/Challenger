@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="vie0wport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Encriptador</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./assets/img/logoAlura.png" alt="logo da Alura">
+        <img class="logo" src="assets/img/logoAlura.png" alt="logo da Alura">
     </header>
     <main>
         <section>
             <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
             <div class="informacao">
-                <h6><img src="./assets/img/icone.png"> Apenas letras minúsculas e sem acento.</h6>
+                <h6><img src="assets/img/icone.png"> Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="botoes">
                 <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
@@ -24,11 +24,22 @@
             </div>
         </section>
         <section>
-            <textarea class="mensagem" cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
+            
+            <textarea id="mensagem" cols="20" rows="15"></textarea>
+            <button id="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            <div id="textoMsg">
+                <img id="boneco" src="./assets/img/boneco.png" alt="boneco">
+                <h4>Nenhuma mensagem <br>  encontrada</h4>
+                <h5>Digite um texto que você deseja <br> criptografar ou descriptografar.</h5>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>Projeto desenvolvido por
+        Diego Guimarães Araújo <br>
+        d.garaujo@outlook.com</p>
+    </footer>
     
-    <script src="./assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

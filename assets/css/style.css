@@ -1,15 +1,24 @@
-* {
-    background: #E5E5E5;
+*{
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    color: #0A3871;
     font-size: 32px;
-    line-height: 150%;       
+}
+body {
+    background-color: #b2d8d0;
+    width: 1080 px;
+    height: 720px;
+}
+
+header {
+    padding: 10px;
+    display: flex;
 }
 
 .logo {
-    margin-left: 10px;
-    padding-top: 10px;
+    position: absolute;
     width: 2%;
+    top: 50px;
+    left: 50px;
     
 }
 
@@ -20,32 +29,90 @@ main {
 }
 
 .text-area {
-    border: none;
-    color: #0A3B71;
-    margin-top: 90px;
     text-transform: lowercase;
-}
-
-::placeholder {color: #0A3B71; }
-    .text-area:focus {
-        outline: none;
-    }
-
-.mensagem {
-    background: white;
-    background-image: url(../img/boneco.png);
-    background-repeat: no-repeat;
-    border-radius: 24px;
+    background: none;
     border: none;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
+    padding: 20px;
+    margin: 88px 0px 0px 75px ;
+    width: 500px;
+    height: 300px;
 }
 
-.mensagem:focus {
-    outline: none;  
+::placeholder {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+
+#mensagem {
+    padding: 20px;
+    position: absolute;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border: none;
+    width: 350px;
+    height: 562px;
+    left: 850px;
+    top: 25px; 
+}
+
+#mensagem {
+    outline: none;
+}
+
+#boneco {
+    position: absolute;
+    width: 20%;
+    left: 935px;
+    top: 50px;
+}
+
+h4 {
+    position: absolute;
+    color: #0A3871;
+    font-size: 24px;
+    line-height: 120%;
+    top: 300px;
+    left: 923px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+h5 {
+    position: absolute;
+    color: #0A3871;
+    font-size: 15px;
+    line-height: 150%;
+    top: 390px;
+    left: 928px;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+h6 {
+    display: flex;
+    font-size: 12px;
+    align-content: center;
+    color: #495057;
+    opacity: 0.8;
+    order: 1;
+    flex-grow: 0;
+}
+
+h6 img {
+    display: flex;
+    align-content: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    color: #495057;
+    opacity: 0.8;
 }
 
 .botoes {
@@ -53,50 +120,80 @@ main {
     margin-top: 18px;
 }
 
-.btn-desencriptar {
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-   }
-
 .btn-encriptar {
-    background: #0A3871;
-    border: 1px solid #0A3871;
+    border: none;
     border-radius: 24px;
-    color: white;
+    color:#fff;
+    background-color: #0A3871;
+    padding: 25px;
+    margin: 10px;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     cursor: pointer;
-    height: 67px;
-    width: 328px;
 }
 
-.btn-copiar {
-    border: 1px solid #0A3871;
-    border-radius: 24px;
+.btn-encriptar:hover {
     color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    background-color: #fff;
+    border: none;
+}
+
+.btn-desencriptar {
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background-color: #0A3871;
+    padding: 25px;  
+    margin: 10px;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.btn-desencriptar:hover {
+    color: #0A3871;
+    background-color: #fff;
+}
+
+#btn-copiar {
     position: absolute;
-    width: 336px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: #fff;
+    color: #0A3871;
+    padding: 25px;
+    margin: 10px;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    top: 500px;
+    left: 886px;
+}
+
+#btn-copiar:hover {
+    color: #fff;
+    background-color: #0A3871;
 }
 
 
-.informacao {
-    font-size: 18px;
-    color: #495057;
+footer{
+    background-color: #0A3871;
+    position: absolute;
+    width: 1350px;
+    height: 90px;
+    left: 0px;
+    top: 650px;
+    
+    
 }
 
 footer p {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    color: #0A3871;
+    font-size: 16px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    
 }
